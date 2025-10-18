@@ -1,0 +1,5 @@
+{
+  "name": "ENSTTIC SDNLAB",
+  "description": "An interactive, multi-language lab manual for the ENSTTIC Software-Defined Networking (SDN) Lab. Features include a dynamic dashboard, detailed lab steps, diagrams, light/dark modes, and progress tracking.",
+  "requestFramePermissions": []
+}

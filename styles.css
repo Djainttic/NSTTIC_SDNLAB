@@ -1,0 +1,39 @@
+:root {
+    --bg-primary: #f8fafc; --bg-secondary: #ffffff; --bg-callout: #f1f5f9;
+    --text-primary: #334155; --text-secondary: #64748b; --text-headings: #0f172a;
+    --border-color: #e2e8f0; --border-accent: #004494; --border-warning: #f59e0b;
+    --accent-color: #004494; --accent-color-light: #eff6ff; --accent-text-light: #1e40af;
+    --code-bg: #f1f5f9; --code-text: #334155;
+}
+html.dark {
+    --bg-primary: #0f172a; --bg-secondary: #1e293b; --bg-callout: #334155;
+    --text-primary: #cbd5e1; --text-secondary: #94a3b8; --text-headings: #f1f5f9;
+    --border-color: #334155; --border-accent: #3b82f6; --border-warning: #f59e0b;
+    --accent-color-light: #1e293b; --accent-text-light: #60a5fa;
+    --code-bg: #020617; --code-text: #cbd5e1;
+}
+body { font-family: 'Inter', sans-serif; background-color: var(--bg-primary); color: var(--text-primary); transition: background-color 0.3s, color 0.3s; }
+.font-poppins { font-family: 'Poppins', sans-serif; }
+h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; color: var(--text-headings); }
+.bg-secondary { background-color: var(--bg-secondary); }
+.border-custom { border-color: var(--border-color); }
+.accent-color { color: var(--accent-color); }
+.lab-card:hover { transform: translateY(-4px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05); }
+.tab-btn.active { color: var(--border-accent); border-bottom-color: var(--border-accent); }
+.callout { background-color: var(--bg-callout); border-left-width: 4px; }
+.callout-concept { border-color: var(--border-accent); }
+.callout-info { border-color: #3b82f6; background-color: #eff6ff; }
+html.dark .callout-info { background-color: #1e293b; }
+.callout-warning { border-color: var(--border-warning); }
+.step-icon { background-color: var(--accent-color-light); color: var(--accent-text-light); }
+html.dark .step-icon { background-color: #334155; }
+.mermaid { background-color: transparent; }
+.prose pre { position: relative; }
+.copy-btn { position: absolute; top: 0.5rem; right: 0.5rem; }
+.prose table { width: 100%; border-collapse: collapse; }
+.prose th, .prose td { border: 1px solid var(--border-color); padding: 8px; }
+.prose th { background-color: var(--bg-callout); }
+.prose ul { list-style-type: disc; padding-left: 1.5rem; }
+.prose li { margin-bottom: 0.5rem; }
+#zoom-modal-content .mermaid { width: 100%; height: 100%; overflow: auto; }
+.diagram-container { cursor: zoom-in; }
